@@ -9,8 +9,6 @@ on:
       - main
 
 jobs:
- 
-
   test:
     runs-on: ubuntu-latest
     defaults:
@@ -40,4 +38,4 @@ jobs:
       - name: compress build
         uses: montudor/action-zip@v1
         with:
-          args: zip -qq -r dist.zip dist
+          args: zip -qq -r dist.zip task-1/dist
