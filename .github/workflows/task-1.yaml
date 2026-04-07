@@ -17,7 +17,9 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: ./task-1
     steps:
       - name: Check out code
         uses: actions/checkout@v6
@@ -38,5 +40,3 @@ jobs:
 
       - name: Build the React application
         run: npm run build
-
-
